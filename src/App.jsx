@@ -8,6 +8,8 @@ const count = useSelector((state)=>state.counter.value)
 const [incValue , setIncValue] = useState(0)
 const dispatch = useDispatch()
 
+console.log(dispatch , "dispatch")
+
 function handleOnchange (e){
   const value = Number(e.target.value)
     setIncValue(value)

@@ -4,6 +4,7 @@ const initialState = {
     value : 0
 }
 
+
 export const counterSlice = createSlice({
     name : 'counter',
     initialState,
@@ -24,5 +25,6 @@ export const counterSlice = createSlice({
 
 })
 export const {increment , decrement , reset  , byvalue} = counterSlice.actions;
+console.log(counterSlice , "counterslice>>>>>>>>")
 
 export default counterSlice.reducer;
