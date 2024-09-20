@@ -5,10 +5,10 @@ export const myApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://dummyjson.com/products' }),
   endpoints: (builder) => ({ 
     getProductbyCategory: builder.query({
-      query: (category) => `/category-list/${category}`,
+      query: () => `/category-list`,
     }),
     getSortProduct: builder.query({
-      query: (sort) => `?sortBy=title&order=${sort}`,
+      query: () => `/category/smartphones`,
     }),
   }),
 });
